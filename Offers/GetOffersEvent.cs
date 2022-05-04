@@ -1,5 +1,3 @@
-using Offers.Handlers;
-
 namespace Models.Offers;
 
 public class GetOffersEvent : EventModel

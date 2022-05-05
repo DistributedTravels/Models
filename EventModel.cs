@@ -6,9 +6,14 @@ namespace Models
     {
         [JsonProperty]
         public Guid Id { get; set; }
+        
+        [JsonProperty]
+        public Guid CorrelationId { get; set; }
 
         [JsonProperty]
         public DateTime CreationDate { get; private set; }
+
+        public Guid ProcessingId { get; set; }
 
         [JsonConstructor]
         public EventModel(Guid id, DateTime date)

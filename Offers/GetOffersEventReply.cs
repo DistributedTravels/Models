@@ -1,4 +1,4 @@
-﻿using Models.Offers.Dto;
+using Models.Offers.Dto;
 namespace Models.Offers
 {
     public class GetOffersEventReply : EventModel

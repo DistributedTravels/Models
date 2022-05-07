@@ -13,8 +13,6 @@ namespace Models
         [JsonProperty]
         public DateTime CreationDate { get; private set; }
 
-        public Guid ProcessingId { get; set; }
-
         [JsonConstructor]
         public EventModel(Guid id, DateTime date)
         {
@@ -26,6 +24,7 @@ namespace Models
         {
             Id = Guid.NewGuid();
             CreationDate = DateTime.UtcNow;
+            CorrelationId = Guid.NewGuid();
         }
     }
 }

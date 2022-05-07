@@ -1,8 +1,8 @@
-﻿using Database.Tables;
+﻿using Models.Offers.Dto;
 namespace Models.Offers
 {
     public class GetOffersEventReply : EventModel
     {
-        public IEnumerable<Trip> Trips { get; set; }
+        public IEnumerable<TripDto> Trips { get; set; }
     }
 }

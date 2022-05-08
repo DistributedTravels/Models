@@ -4,7 +4,7 @@
     {
         public enum State { 
             RESERVED,
-            NOT_ENOUGH_AVAILABLE
+            NOT_RESERVED
         };
 
         public State Answer { get; set; }

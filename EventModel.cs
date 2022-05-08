@@ -14,10 +14,11 @@ namespace Models
         public DateTime CreationDate { get; private set; }
 
         [JsonConstructor]
-        public EventModel(Guid id, DateTime date)
+        public EventModel(Guid id, DateTime date, Guid cId)
         {
             Id = id;
             CreationDate = date;
+            CorrelationId = cId;
         }
 
         public EventModel()

@@ -5,9 +5,10 @@
         public Guid RequestId { get; set; }
         public IEnumerable<string> Destinations { get; set; }
 
-        public GetAvailableDestinationsReplyEvent(Guid rId, IEnumerable<string> dests) : base()
+        public GetAvailableDestinationsReplyEvent(Guid rId, Guid cId, IEnumerable<string> dests) : base()
         {
             RequestId = rId;
+            CorrelationId = cId;
             Destinations = dests;
         }
     }

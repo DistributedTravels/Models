@@ -23,7 +23,7 @@ namespace Models
         public EventModel()
         {
             Id = Guid.NewGuid();
-            CreationDate = DateTime.Now;
+            CreationDate = DateTime.UtcNow;
             CorrelationId = Guid.NewGuid();
         }
     }

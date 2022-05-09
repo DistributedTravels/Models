@@ -9,11 +9,12 @@
         public int AppartmentsAmount { get; set; }
         public int CasualRoomAmount { get; set; }
         public Guid UserId { get; set; }
+        public Guid ReservationNumber { get; set; }
 
         public ReserveRoomsEvent(
             int hotelId, DateTime beginDate, DateTime endDate,
             int appartmentsAmount, int casualRoomAmount,
-            Guid userId) : base()
+            Guid userId, Guid reservationNumber) : base()
         {
             HotelId = hotelId;
             BeginDate = beginDate;
@@ -21,6 +22,7 @@
             AppartmentsAmount = appartmentsAmount;
             CasualRoomAmount = casualRoomAmount;
             UserId = userId;
+            ReservationNumber = reservationNumber;
         }
     }
 }

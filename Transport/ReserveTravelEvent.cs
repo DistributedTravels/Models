@@ -4,14 +4,13 @@
     {
         public int TravelId { get; set; }
         public int Seats { get; set; }
+        public Guid ReserveId { get; set; }
 
-        public Guid UserId { get; set; }
-
-        public ReserveTravelEvent(int tId, int seats, Guid uId) : base()
+        public ReserveTravelEvent(int travelId, int seats, Guid reserveId) : base()
         {
-            TravelId = tId;
+            TravelId = travelId;
             Seats = seats;
-            UserId = uId;
+            ReserveId = reserveId;
         }
     }
 }

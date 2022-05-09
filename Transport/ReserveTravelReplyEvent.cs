@@ -9,10 +9,10 @@
 
         public State Answer { get; set; }
 
-        public ReserveTravelReplyEvent(State ans, Guid cId) : base()
+        public ReserveTravelReplyEvent(State answer, Guid corellationId) : base()
         {
-            Answer = ans;
-            CorrelationId = cId;
+            Answer = answer;
+            CorrelationId = corellationId;
         }
     }
 }

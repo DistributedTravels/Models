@@ -2,14 +2,10 @@
 {
     public class UnreserveTravelEvent : EventModel
     {
-        public int TravelId { get; set; }
-        public Guid UserId { get; set; }
-        public int Seats { get; set; }
-        public UnreserveTravelEvent(int tId, Guid uId, int seats) : base()
+        public Guid ReserveId { get; set; }
+        public UnreserveTravelEvent(Guid reserveId) : base()
         { 
-            TravelId = tId; 
-            UserId = uId;
-            Seats = seats;
+            ReserveId = reserveId;
         }
     }
 }

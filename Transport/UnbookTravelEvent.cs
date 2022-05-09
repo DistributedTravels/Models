@@ -5,13 +5,13 @@
         public int FlightId { get; set; }
         public int Seats { get; set; }
 
-        public Guid UserId { get; set; }
+        public Guid BookingId { get; set; }
 
-        public UnbookTravelEvent(int flightId, int seats, Guid uId) : base()
+        public UnbookTravelEvent(int flightId, int seats, Guid bookingId) : base()
         {
             this.FlightId = flightId;
             this.Seats = seats;
-            this.UserId = uId;
+            this.BookingId = bookingId;
         }
     }
 }

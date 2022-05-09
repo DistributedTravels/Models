@@ -10,10 +10,10 @@
         }
         public State Response { get; set; }
 
-        public ProcessPaymentReplyEvent(State resp, Guid cId) : base()
+        public ProcessPaymentReplyEvent(State response, Guid correlationId) : base()
         {
-            Response = resp;
-            CorrelationId = cId;
+            Response = response;
+            CorrelationId = correlationId;
         }
     }
 }

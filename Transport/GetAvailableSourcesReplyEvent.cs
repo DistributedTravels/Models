@@ -5,11 +5,11 @@
         public Guid RequestId { get; set; }
         public IEnumerable<string> Sources { get; set; }
 
-        public GetAvailableSourcesReplyEvent(Guid rId, Guid cId, IEnumerable<string> srcs) : base()
+        public GetAvailableSourcesReplyEvent(Guid requestId, Guid correlationId, IEnumerable<string> sources) : base()
         {
-            RequestId = rId;
-            CorrelationId = cId;
-            Sources = srcs;
+            RequestId = requestId;
+            CorrelationId = correlationId;
+            Sources = sources;
         }
     }
 }

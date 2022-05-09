@@ -3,9 +3,10 @@
     public class GetHotelsEventReply : EventModel
     {
         public IEnumerable<HotelItem>? HotelItems { get; }
-        public GetHotelsEventReply(IEnumerable<HotelItem>? hotelItems) : base()
+        public GetHotelsEventReply(IEnumerable<HotelItem>? hotelItems, Guid correlationID) : base()
         {
             HotelItems = hotelItems;
+            CorrelationId = correlationID;
         }
     }
 

@@ -14,11 +14,13 @@
     {
         public int HotelItemId { get; set; }
         public string HotelName { get; set; }
+        public string HotelCountry { get; set; }
 
-        public HotelItem(int hotelItemId, string hotelName)
+        public HotelItem(int hotelItemId, string hotelName, string hotelCountry)
         {
             HotelItemId = hotelItemId;
             HotelName = hotelName;
+            HotelCountry = hotelCountry;
         }
     }
 }

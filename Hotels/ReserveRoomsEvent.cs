@@ -10,11 +10,14 @@
         public int CasualRoomAmount { get; set; }
         public Guid UserId { get; set; }
         public Guid ReservationNumber { get; set; }
+        public Boolean Breakfast { get; set; }
+        public Boolean Wifi { get; set; }
 
         public ReserveRoomsEvent(
             int hotelId, DateTime beginDate, DateTime endDate,
             int appartmentsAmount, int casualRoomAmount,
-            Guid userId, Guid reservationNumber) : base()
+            Guid userId, Guid reservationNumber,
+            Boolean breakfast, Boolean wifi) : base()
         {
             HotelId = hotelId;
             BeginDate = beginDate;
@@ -23,6 +26,8 @@
             CasualRoomAmount = casualRoomAmount;
             UserId = userId;
             ReservationNumber = reservationNumber;
+            Breakfast = breakfast;
+            Wifi = wifi;
         }
     }
 }

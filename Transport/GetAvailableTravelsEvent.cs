@@ -16,5 +16,11 @@
             this.FreeSeats = freeSeats;
             this.TravelId = travelId;
         }
+
+        public GetAvailableTravelsEvent() : base()
+        {
+            Source = "any";
+            Destination = "any";
+        }
     }
 }

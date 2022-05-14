@@ -10,5 +10,10 @@
         {
             Country = country;
         }
+
+        public GetHotelsEvent() : base()
+        {
+            Country = "any";
+        }
     }
 }

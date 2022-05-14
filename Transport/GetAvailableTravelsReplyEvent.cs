@@ -23,14 +23,19 @@
         public int AvailableSeats { get; set; }
         public double Price { get; set; }
 
-        public TravelItem(int id, string source, string destination, DateTime departureTime, int seats, double price)
+        public TravelItem(int id, string source, string destination, DateTime departureTime, int availableSeats, double price)
         {
             TravelId = id;
             Source = source;
             Destination = destination;
             DepartureTime = departureTime;
-            AvailableSeats = seats;
+            AvailableSeats = availableSeats;
             Price = price;
+        }
+
+        public TravelItem()
+        {
+
         }
     }
 }

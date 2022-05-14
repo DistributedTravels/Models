@@ -18,6 +18,7 @@
         {
             HotelItemId = hotelItem.HotelItemId;
             HotelName= hotelItem.HotelName;
+            Location = hotelItem.HotelCountry;
         }
     }
 }

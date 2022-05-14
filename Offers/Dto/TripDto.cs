@@ -17,5 +17,10 @@
         public int ChildrenUnder10 { get; set; }
         public int ChildrenUnder18 { get; set; }
         public Guid TripId { get; set; }
+
+        public TripDto()
+        {
+            TripId = Guid.NewGuid();
+        }
     }
 }

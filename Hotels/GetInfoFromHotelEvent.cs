@@ -23,5 +23,10 @@
             Breakfast = breakfast;
             Wifi = wifi;
         }
+
+        public GetInfoFromHotelEvent()
+        {
+            
+        }
     }
 }

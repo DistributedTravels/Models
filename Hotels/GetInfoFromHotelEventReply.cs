@@ -17,5 +17,10 @@
             Price = price;
             CorrelationId = cId;
         }
+
+        public GetInfoFromHotelEventReply()
+        {
+            
+        }
     }
 }

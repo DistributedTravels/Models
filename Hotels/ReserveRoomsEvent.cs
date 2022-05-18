@@ -29,5 +29,18 @@
             Breakfast = breakfast;
             Wifi = wifi;
         }
+
+        public ReserveRoomsEvent() : base()
+        {
+            HotelId = 1;
+            BeginDate = new DateTime(2022, 1, 1).ToUniversalTime();
+            EndDate = new DateTime(2022, 1, 1).ToUniversalTime();
+            AppartmentsAmount = 0;
+            CasualRoomAmount = 0;
+            UserId = Guid.NewGuid();
+            ReservationNumber = Guid.NewGuid();
+            Breakfast = false;
+            Wifi = false;
+        }
     }
 }

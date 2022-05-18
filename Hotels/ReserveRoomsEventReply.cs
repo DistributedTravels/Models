@@ -17,5 +17,11 @@
             Price = price;
             CorrelationId = cId;
         }
+
+        public ReserveRoomsEventReply() : base()
+        {
+            Answer = State.NOT_RESERVED;
+            Price = 0.0;
+        }
     }
 }

@@ -18,9 +18,10 @@
             CorrelationId = cId;
         }
 
-        public GetInfoFromHotelEventReply()
+        public GetInfoFromHotelEventReply() : base()
         {
-            
+            Answer = State.CAN_NOT_BE_RESERVED;
+            Price = 0.0;
         }
     }
 }

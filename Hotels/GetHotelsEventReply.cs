@@ -8,6 +8,11 @@
             HotelItems = hotelItems;
             CorrelationId = correlationID;
         }
+
+        public GetHotelsEventReply() : base()
+        {
+            HotelItems = new List<HotelItem>();
+        }
     }
 
     public class HotelItem

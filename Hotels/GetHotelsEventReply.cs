@@ -2,7 +2,7 @@
 {
     public class GetHotelsEventReply : EventModel
     {
-        public IEnumerable<HotelItem>? HotelItems { get; }
+        public IEnumerable<HotelItem>? HotelItems { get; set; }
         public GetHotelsEventReply(IEnumerable<HotelItem>? hotelItems, Guid correlationID) : base()
         {
             HotelItems = hotelItems;
@@ -11,7 +11,7 @@
 
         public GetHotelsEventReply() : base()
         {
-            HotelItems = new List<HotelItem>();
+            //HotelItems = new List<HotelItem>();
         }
     }
 

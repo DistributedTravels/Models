@@ -14,5 +14,7 @@
             Answer = answer;
             CorrelationId = corellationId;
         }
+
+        public ReserveTravelReplyEvent() { }
     }
 }

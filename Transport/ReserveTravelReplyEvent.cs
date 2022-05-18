@@ -16,5 +16,7 @@
             CorrelationId = corellationId;
             Price = price;
         }
+
+        public ReserveTravelReplyEvent() { }
     }
 }

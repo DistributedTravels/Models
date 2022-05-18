@@ -23,5 +23,16 @@
             Breakfast = breakfast;
             Wifi = wifi;
         }
+
+        public GetInfoFromHotelEvent() : base()
+        {
+            HotelId = 1;
+            BeginDate = new DateTime(2022, 1, 1).ToUniversalTime();
+            EndDate = new DateTime(2022, 1, 1).ToUniversalTime();
+            AppartmentsAmount = 0;
+            CasualRoomAmount = 0;
+            Breakfast = false;
+            Wifi = false;
+        }
     }
 }

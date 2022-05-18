@@ -8,5 +8,10 @@
         {
             ReservationNumber = reservationNumber;
         }
+
+        public UnreserveRoomsEvent() : base()
+        {
+            ReservationNumber = Guid.NewGuid();
+        }
     }
 }

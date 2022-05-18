@@ -7,5 +7,9 @@
         { 
             ReserveId = reserveId;
         }
+
+        public UnreserveTravelEvent()
+        {
+        }
     }
 }

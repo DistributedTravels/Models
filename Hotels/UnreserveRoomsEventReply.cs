@@ -15,5 +15,10 @@
             Answer = ans;
             CorrelationId = cId;
         }
+
+        public UnreserveRoomsEventReply() : base()
+        {
+            Answer = State.RESERVED;
+        }
     }
 }

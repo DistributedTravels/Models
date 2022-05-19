@@ -10,6 +10,7 @@
             Card = card;
             Price = price;
         }
+		public ProcessPaymentEvent() {}
     }
 
     public class CardCredentials

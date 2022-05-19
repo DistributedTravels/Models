@@ -15,5 +15,6 @@
             Response = response;
             CorrelationId = correlationId;
         }
+		public ProcessPaymentReplyEvent() {}
     }
 }

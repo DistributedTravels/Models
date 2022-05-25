@@ -23,5 +23,6 @@
         public bool HasInternet { get; set; }
         public bool HasBreakfast { get; set; }
         public bool HasOwnTransport { get; set; }
+        public bool HasPromotionCode { get; set; }
     }
 }

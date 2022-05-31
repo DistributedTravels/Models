@@ -20,12 +20,19 @@
         public int HotelItemId { get; set; }
         public string HotelName { get; set; }
         public string HotelCountry { get; set; }
+        public double HotelBreakfastPrice { get; set; }
+        public bool HotelHasWifi { get; set; }
+        public double HotelPriceForNightForPerson { get; set; }
 
-        public HotelItem(int hotelItemId, string hotelName, string hotelCountry)
+        public HotelItem(int hotelItemId, string hotelName, string hotelCountry,
+            double hotelBreakfastPrice, bool hotelHasWifi, double hotelPriceForNightForPerson)
         {
             HotelItemId = hotelItemId;
             HotelName = hotelName;
             HotelCountry = hotelCountry;
+            HotelBreakfastPrice = hotelBreakfastPrice;
+            HotelHasWifi = hotelHasWifi;
+            HotelPriceForNightForPerson = hotelPriceForNightForPerson;
         }
     }
 }

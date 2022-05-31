@@ -8,7 +8,8 @@
             WAITING_FOR_RESERVATION,
             WAITING_FOR_PAYMENT,
             SUCCESFUL,
-            FAILED
+            FAILED,
+            PROCESSING_PAYMENT
         }
         public Status ReservationStatus { get; set; }
         public double Price;

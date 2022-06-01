@@ -21,7 +21,9 @@ namespace Models.Transport
         public Actions Action { get; set; }
         public Tables Table { get; set; }
 
-        public ChangeDto Details { get; set; }
+        public DestinationChangeDto DestinationDetails { get; set; }
+        public SourceChangeDto SourceDetails { get; set; }
+        public TravelChangeDto TravelDetails { get; set; }
 
         public UpdateTransportTOEvent() : base() { }
     }

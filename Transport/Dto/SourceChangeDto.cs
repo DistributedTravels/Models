@@ -1,7 +1,8 @@
 ﻿namespace Models.Transport.Dto
 {
-    public class SourceChangeDto : ChangeDto
+    public class SourceChangeDto
     {
-        public string Name { get; set; }
+        public string Name { get; set; } = "";
+        public string NewName { get; set; } = ""; // only used for updating name!
     }
 }

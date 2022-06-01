@@ -1,8 +1,9 @@
 ﻿namespace Models.Transport.Dto
 {
-    public class DestinationChangeDto : ChangeDto
+    public class DestinationChangeDto
     {
-        public string Name { get; set; }
-        public int Distance { get; set; }
+        public string Name { get; set; } = "";
+        public string NewName { get; set; } = ""; // only used for updating name!
+        public int Distance { get; set; } = -1;
     }
 }

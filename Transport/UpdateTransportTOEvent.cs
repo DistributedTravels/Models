@@ -14,7 +14,6 @@ namespace Models.Transport
         public enum Tables
         {
             DESTINATION,
-            SOURCE,
             TRAVEL
         }
 
@@ -22,7 +21,6 @@ namespace Models.Transport
         public Tables Table { get; set; }
 
         public DestinationChangeDto DestinationDetails { get; set; }
-        public SourceChangeDto SourceDetails { get; set; }
         public TravelChangeDto TravelDetails { get; set; }
 
         public UpdateTransportTOEvent() : base() { }

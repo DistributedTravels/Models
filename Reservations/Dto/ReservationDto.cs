@@ -22,5 +22,10 @@
         public bool HasInternet { get; set; }
         public bool HasBreakfast { get; set; }
         public bool HasOwnTransport { get; set; }
+        public double TransportPricePerSeat { get; set; }
+        public double HotelPrice { get; set; }
+        public double TotalPrice { get; set; }
+        public Guid ReservationId { get; set; }
+        public bool HasDiscount { get; set; }
     }
 }

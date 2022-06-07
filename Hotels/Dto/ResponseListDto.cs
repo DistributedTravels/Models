@@ -5,6 +5,8 @@
         public Guid ReservationNumber { get; set; }
         public Guid UserId { get; set; }
         public double CalculatedCost { get; set; }
+        public int AppartmentsAmount { get; set; }
+        public int CasualRoomsAmount { get; set; }
     }
 
     public class ResponseListDtoComparer : IEqualityComparer<ResponseListDto>

@@ -23,9 +23,12 @@
         public double HotelBreakfastPrice { get; set; }
         public bool HotelHasWifi { get; set; }
         public double HotelPriceForNightForPerson { get; set; }
+        public int ApartmentsAmount { get; set; }
+        public int CasualRoomsAmount { get; set; }
 
         public HotelItem(int hotelItemId, string hotelName, string hotelCountry,
-            double hotelBreakfastPrice, bool hotelHasWifi, double hotelPriceForNightForPerson)
+            double hotelBreakfastPrice, bool hotelHasWifi, double hotelPriceForNightForPerson,
+            int apartmentsAmount, int casualRoomsAmount)
         {
             HotelItemId = hotelItemId;
             HotelName = hotelName;
@@ -33,6 +36,8 @@
             HotelBreakfastPrice = hotelBreakfastPrice;
             HotelHasWifi = hotelHasWifi;
             HotelPriceForNightForPerson = hotelPriceForNightForPerson;
+            ApartmentsAmount = apartmentsAmount;
+            CasualRoomsAmount = casualRoomsAmount;
         }
     }
 }

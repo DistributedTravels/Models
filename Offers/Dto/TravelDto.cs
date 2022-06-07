@@ -10,14 +10,16 @@ namespace Models.Offers.Dto
         public string Destination { get; set; }
         public DateTime DepartureTime { get; set; }
         public int AvailableSeats { get; set; }
+        public double PricePerSeat { get; set; }
 
-        public TravelDto(int id, string source, string destination, DateTime departureTime, int seats)
+        public TravelDto(int id, string source, string destination, DateTime departureTime, int seats, double price)
         {
             TravelId = id;
             Source = source;
             Destination = destination;
             DepartureTime = departureTime;
             AvailableSeats = seats;
+            PricePerSeat = price;
         }
         public TravelDto(TravelItem travel)
         {
@@ -26,6 +28,7 @@ namespace Models.Offers.Dto
             Destination = travel.Destination;
             DepartureTime = travel.DepartureTime;
             AvailableSeats = travel.AvailableSeats;
+            PricePerSeat = travel.Price;
         }
     }
 }

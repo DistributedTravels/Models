@@ -27,7 +27,6 @@
             WifiAvailable = hotelItem.HotelHasWifi;
             BreakfastAvailable = hotelItem.HotelBreakfastPrice >= 0;
             PricePerPersonPerNight = hotelItem.HotelPriceForNightForPerson;
-            // placeholders
             BigRoomsAvailable = 100;
             SmallRoomsAvailable = 100;
         }

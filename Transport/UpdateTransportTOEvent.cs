@@ -13,14 +13,12 @@ namespace Models.Transport
 
         public enum Tables
         {
-            DESTINATION,
             TRAVEL
         }
 
         public Actions Action { get; set; }
         public Tables Table { get; set; }
 
-        public DestinationChangeDto DestinationDetails { get; set; }
         public TravelChangeDto TravelDetails { get; set; }
 
         public UpdateTransportTOEvent() : base() { }

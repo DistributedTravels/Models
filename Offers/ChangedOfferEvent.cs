@@ -4,7 +4,7 @@ namespace Models.Offers
 {
     public class ChangedOfferEvent : EventModel
     {
-        public TripDto oldOffer { get; set; }
-        public TripDto newOffer { get; set; }
+        public TripDto OldOffer { get; set; }
+        public TripDto NewOffer { get; set; }
     }
 }

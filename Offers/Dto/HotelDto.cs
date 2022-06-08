@@ -11,6 +11,7 @@
         public int BigRoomsAvailable { get; set; }
         public int SmallRoomsAvailable { get; set; }
         public double PricePerPersonPerNight { get; set; }
+        public double BreakfastPrice { get; set; }
 
         public HotelDto(int hotelItemId, string hotelName, string location)
         {
@@ -26,6 +27,7 @@
             Location = hotelItem.HotelCountry;
             WifiAvailable = hotelItem.HotelHasWifi;
             BreakfastAvailable = hotelItem.HotelBreakfastPrice >= 0;
+            BreakfastPrice = hotelItem.HotelBreakfastPrice;
             PricePerPersonPerNight = hotelItem.HotelPriceForNightForPerson;
             BigRoomsAvailable = 100;
             SmallRoomsAvailable = 100;

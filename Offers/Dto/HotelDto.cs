@@ -29,8 +29,8 @@
             BreakfastAvailable = hotelItem.HotelBreakfastPrice >= 0;
             BreakfastPrice = hotelItem.HotelBreakfastPrice;
             PricePerPersonPerNight = hotelItem.HotelPriceForNightForPerson;
-            BigRoomsAvailable = 100;
-            SmallRoomsAvailable = 100;
+            BigRoomsAvailable = hotelItem.ApartmentsAmount;
+            SmallRoomsAvailable = hotelItem.CasualRoomsAmount;
         }
     }
 }

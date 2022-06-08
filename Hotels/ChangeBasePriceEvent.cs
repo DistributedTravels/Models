@@ -2,7 +2,7 @@
 {
     public class ChangeBasePriceEvent : EventModel
     {
-        public string HotelName { get; set; }
+        public int HotelId { get; set; }
         public double NewPrice { get; set; }
     }
 }

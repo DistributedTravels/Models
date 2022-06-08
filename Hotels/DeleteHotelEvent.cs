@@ -2,6 +2,6 @@
 {
     public class DeleteHotelEvent : EventModel
     {
-        public string Name { get; set; }
+        public int HotelId { get; set; }
     }
 }

@@ -26,6 +26,7 @@
         public int SmallRoomsAvailable { get; set; }
         public bool OfferAvailable { get; set; }
         public bool PlaneAvailable { get; set; }
+        public double BreakfastPrice { get; set; }
 
         public TripDto()
         {

@@ -2,7 +2,7 @@
 {
     public class ChangeWifiAvailabilityEvent : EventModel
     {
-        public string HotelName { get; set; }
+        public int HotelId { get; set; }
         public bool Wifi { get; set; }
     }
 }

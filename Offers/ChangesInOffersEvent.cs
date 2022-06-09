@@ -12,5 +12,6 @@
         public int TransportId { get; set; }
         public double TransportPricePerSeat { get; set; }
         public bool PlaneAvailable { get; set; }
+        public double BreakfastPrice { get; set; }
     }
 }
